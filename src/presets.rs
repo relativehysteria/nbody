@@ -1,6 +1,8 @@
 use crate::prelude::*;
 
 /// Creates a uniform gravitational disc over a central body
+///
+/// This spawns bodies only in the first two dimensions, leaving others at 0.
 pub fn uniform_disc<const DIMENSIONS: usize>(
         rng: &mut Rng) -> Vec<Body<DIMENSIONS>> {
     // Create the vector to hold the bodies
