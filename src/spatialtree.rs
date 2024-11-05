@@ -137,7 +137,7 @@ impl<const DIMENSIONS: usize> Node<DIMENSIONS> {
 }
 
 pub struct SpatialTree<const DIMENSIONS: usize> {
-    /// List of nodes in the quadtree
+    /// List of nodes in the tree
     pub nodes: Vec<Node<DIMENSIONS>>,
 
     /// Stack to track nodes with children (for mass propagation)
