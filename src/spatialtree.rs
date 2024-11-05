@@ -103,7 +103,7 @@ pub struct Node<const DIMENSIONS: usize> {
     pub region: Region<DIMENSIONS>,
 
     /// Range of indices of bodies contained in this node
-pub bodies: Range<usize>,
+    pub bodies: Range<usize>,
 }
 
 impl<const DIMENSIONS: usize> Node<DIMENSIONS> {
